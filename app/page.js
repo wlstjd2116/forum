@@ -12,8 +12,6 @@ export default async function Home() {
   
   return (
    <div>
-    {result.title}
-    안녕
    </div>
   )
 }
