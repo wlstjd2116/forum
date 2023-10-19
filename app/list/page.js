@@ -10,9 +10,10 @@ export default async function List() {
         <div className="list-bg">
             {result.map((a, i)=>{
                 return (
+                    // 글의 id 정의
                     <div className='list-item' key={i}>
                         <Link href={"/detail/"+result[i]._id}><h4>{result[i].title}</h4></Link>
-                        <DetailLink></DetailLink>
+                        <Link href={'/edit/' + result[i]._id}>🪄</Link>
                         <p>{result[i].content}</p>
                     </div>
                 )

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { MongoClient } from 'mongodb'
 import {connectDB} from '@/util/database.js'
+import List from './list/page';
 
 export default async function Home() {
   const client = await connectDB;
@@ -12,6 +13,7 @@ export default async function Home() {
   
   return (
    <div>
+    <List></List>
    </div>
   )
 }

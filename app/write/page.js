@@ -1,9 +1,10 @@
 export default function write(){
     return (
         <div>
-            <h4>글 목록 불러오기</h4>
-            <form action="/api/list" method="POST">
-                <button type="submit">버튼</button>
+            <form action="/api/posting" method="POST">
+                <input type="text" name="title"/>
+                <textarea name="content"/>
+                <button type="submit">글 작성</button>
             </form>
         </div>
     )
